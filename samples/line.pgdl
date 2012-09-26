@@ -1,0 +1,21 @@
+#
+# See how looks a 2D line in ||-coords
+#
+
+header {
+	title = "Line correlation";
+}
+axes {
+	char axis1 [label="X"];
+	char axis2 [label="Y"];
+}
+data {
+	axis1="10",	axis2="120";
+	axis1="20",	axis2="100";
+	axis1="30",	axis2="80";
+	axis1="40",	axis2="60";
+	axis1="50",	axis2="40";
+	axis1="60",	axis2="20";
+	axis1="70",	axis2="0";
+}
+

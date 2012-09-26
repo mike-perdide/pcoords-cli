@@ -1,0 +1,16 @@
+header {
+    title = "Test 1";
+    logo = "logo.png";
+    logo.x = "100";
+    logo.y = "10";
+}
+axes {
+    timeline t;
+    char     i;
+    string   a;
+}
+data {
+   t="14:42", i="123", a="foobar" [color="#ff0000",penwidth="3"];
+   t="14:45", i="234", a="abcdef" [penwidth="3"];
+}
+

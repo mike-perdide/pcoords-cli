@@ -1,0 +1,23 @@
+header {
+	title = "Using enumerations";
+}
+axes {
+	timeline axis1 [label="Timeline"];
+	enum     axis2 [label="Enumeration"]; 
+}
+data {
+	axis1="10:00", axis2="Joe the plumber";
+	axis1="10:00", axis2="Donald Duck";
+	axis1="10:05", axis2="Donald Duck";
+	axis1="10:08", axis2="Pablo Picasso";
+	axis1="11:00", axis2="Charles";
+	axis1="12:00", axis2="Utrio";
+	axis1="12:40", axis2="Claude Monnet";
+	axis1="13:00", axis2="Joe le lutin";
+	axis1="14:00", axis2="Éric";
+	axis1="15:00", axis2="Donald Duck";
+	axis1="16:00", axis2="Charles";
+	axis1="21:00", axis2="Joe the plumber";
+
+}
+

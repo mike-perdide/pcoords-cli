@@ -1,0 +1,17 @@
+header {
+    title = "Test Learning mode";
+}
+engine {
+	string_algo="basic";
+#	learn = "0";
+}
+axes {
+    timeline t [label="Timeline"];
+    string   str1 [label="First"];
+    string   str2 [label="Second"];
+}
+data {
+   t="14:42", str1="abcdef", s="similar and then I guess this should be different that the other one, because it is better like that. I don't want collisions here!";
+   t="15:45", str2="fedcba", s="similar and then it changes to something else";
+}
+

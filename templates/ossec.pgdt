@@ -1,0 +1,18 @@
+#
+# Template for OSSEC alerts (http://www.ossec.net)
+# Written by S. Tricaud
+#
+header {
+	title = "OSSEC alerts";
+}
+axes {
+	timeline time [label="Time"];
+	string host [label="Host"];
+	string file [label="File"];
+	ipv4 sip [label="Source IP"];
+	ipv4 dip [label="Dest IP"];
+	string srcuser [label="Source user",relative="true"];
+	string dstuser [label="Dest user",relative="true"];
+	enum prgname [label="Program name"];
+	string alert [label="Alert",relative="true"];
+}

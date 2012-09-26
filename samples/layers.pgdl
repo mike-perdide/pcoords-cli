@@ -1,0 +1,34 @@
+header {
+	title = "Showing a SSH scan";
+}
+axes {
+	timeline time   [label="Time"];
+	ipv4     source [label="Source"];
+	string username [label="User"];
+	string   log    [label="Log"];
+}
+data {
+layer firstscan {
+	time="05:08", source="218.27.1.194", log="Failed keyboard-interactive/pam for invalid user", username="lindsey";
+	time="05:08", source="218.27.1.194", log="Failed keyboard-interactive/pam for invalid user", username="ashlyn";
+	time="05:08", source="218.27.1.194", log="Failed keyboard-interactive/pam for invalid user", username="carly";
+	time="05:08", source="218.27.1.194", log="Failed keyboard-interactive/pam for invalid user", username="marissa";
+	time="05:08", source="218.27.1.194", log="Failed keyboard-interactive/pam for invalid user", username="gracie";
+	time="05:08", source="218.27.1.194", log="Failed keyboard-interactive/pam for invalid user", username="sierra";
+	time="05:08", source="218.27.1.194", log="Failed keyboard-interactive/pam for invalid user", username="lillian";
+	time="05:08", source="218.27.1.194", log="Failed keyboard-interactive/pam for invalid user", username="jillian";
+	time="05:08", source="218.27.1.194", log="Failed keyboard-interactive/pam for invalid user", username="reagan";
+	time="05:08", source="218.27.1.194", log="Failed keyboard-interactive/pam for invalid user", username="shelby";
+}
+layer secondscan {
+	time="17:42", source="218.27.1.194", log="Failed keyboard-interactive/pam for invalid user", username="amelia";
+	time="17:42", source="218.27.1.194", log="Failed keyboard-interactive/pam for invalid user", username="jada";
+	time="17:42", source="218.27.1.194", log="Failed keyboard-interactive/pam for invalid user", username="kendall";
+	time="17:42", source="218.27.1.194", log="Failed keyboard-interactive/pam for invalid user", username="courtney";
+	time="17:42", source="218.27.1.194", log="Failed keyboard-interactive/pam for invalid user", username="brooklyn";
+	time="17:42", source="218.27.1.194", log="Failed keyboard-interactive/pam for invalid user", username="autumn";
+	time="17:42", source="218.27.1.194", log="Failed keyboard-interactive/pam for invalid user", username="mary";
+	time="17:42", source="218.27.1.194", log="Failed keyboard-interactive/pam for invalid user", username="amber";
+	time="17:42", source="218.27.1.194", log="Failed keyboard-interactive/pam for invalid user", username="maggie";
+}
+}

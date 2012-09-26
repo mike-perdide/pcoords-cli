@@ -1,0 +1,67 @@
+header {
+# Warning! fake data, this graph is here just to show some features and vocabulary.
+	title="Finding a cheap appartment";
+	height="200";
+}
+axes {
+	char distance [label="Distance"];
+	b12 price [label="Price"];
+	char size [label="Size"];	
+}
+data {
+# cat1: <= 5km from center town
+layer cat1 { 
+    distance="0", price="4080", size="200" [color="red"];
+    distance="0", price="4000", size="190" [color="red"];
+    distance="1", price="4100", size="250" [color="red"];
+    distance="1", price="3800", size="180" [color="red"];
+    distance="1", price="2000", size="35" [color="red"];
+    distance="2", price="3900", size="200" [color="red"];
+    distance="2", price="3900", size="200" [color="red"];
+    distance="2", price="3900", size="200" [color="red"];
+    distance="2", price="4000", size="255" [color="red"];
+    distance="2", price="2000", size="140" [color="red"];
+    distance="3", price="3000", size="100" [color="red"];
+    distance="3", price="3400", size="150" [color="red"];
+    distance="4", price="4100", size="250" [color="red"];
+    distance="5", price="3900", size="200" [color="red"];
+    distance="5", price="3450", size="180" [color="red"];
+}
+# cat2: > 5km and <= 20
+layer cat2 { 
+    distance="106", price="2000", size="90" [color="blue"];
+    distance="108", price="700", size="30" [color="blue"];
+    distance="110", price="1000", size="40" [color="blue"];
+    distance="110", price="1500", size="55" [color="blue"];
+    distance="110", price="600", size="20" [color="blue"];
+    distance="110", price="1000", size="60" [color="blue"];
+    distance="110", price="3900", size="200" [color="blue"];
+    distance="110", price="1000", size="40" [color="blue"];
+    distance="110", price="1000", size="80" [color="blue"];
+    distance="112", price="950", size="35" [color="blue"];
+    distance="112", price="1200", size="42" [color="blue"];
+    distance="113", price="4000", size="255" [color="blue"];
+    distance="114", price="1300", size="120" [color="blue"];
+    distance="118", price="1900", size="180" [color="blue"];
+    distance="119", price="730", size="50" [color="blue"];
+}
+# cat3: >20
+layer cat3 { 
+    distance="221", price="1000", size="100" [color="green"];
+    distance="224", price="3000", size="255" [color="green"];
+    distance="225", price="300", size="20" [color="green"];
+    distance="227", price="200", size="15" [color="green"];
+    distance="232", price="2000", size="140" [color="green"];
+    distance="234", price="1000", size="120" [color="green"];
+    distance="235", price="600", size="70" [color="green"];
+    distance="236", price="500", size="50" [color="green"];
+    distance="238", price="300", size="30" [color="green"];
+    distance="238", price="400", size="30" [color="green"];
+    distance="242", price="600", size="80" [color="green"];
+    distance="242", price="650", size="75" [color="green"];
+    distance="244", price="460", size="50" [color="green"];
+    distance="247", price="500", size="60" [color="green"];
+}
+
+
+}

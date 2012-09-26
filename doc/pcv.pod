@@ -1,0 +1,153 @@
+=head1 NAME
+
+pcv - Picviz console veritable tool
+
+=head1 SYNOPSIS
+
+B<pcv> B<-T>output_plugin [B<-R>render_plugin] [B<options>] file.pcv ['filter']
+
+=head1 DESCRIPTION
+
+B<pcv> allows to compile PCV files into a plugin choosen format, such as B<svg>, B<csv>, B<png>
+or other.
+
+B<-Tplugin> Replace 'B<plugin>' with a output plugin name. See plugin section
+
+B<-Rplugin> Replace 'B<plugin>' with a render plugin name. See plugin section
+
+B<options> can be either one or several among:
+
+B<-A argument> Provides arguments to the render and output plugin
+
+B<-a> Displays B<all> text along with lines
+
+B<-d> Activates debug mode
+
+B<-Ln> Draw text every n line
+
+B<-l> Skip learning mode
+
+B<-o file> Output to the given file instead of stdout
+
+B<-p file> Use given file to store PID
+
+B<-r...(rrr)> Increases image height and width
+
+B<-s socket.name> Create the socket.name and listen to it (for real-time capabilities)
+
+B<-t template> Use the given template when listening to a socket
+
+B<-Warg> Use Picviz B<with> a special keyword. See keywords section
+
+The filter parameter is explained in the filter section below.
+
+=head1 PLUGINS
+
+Plugins are located with ld, search path can be overridden with PICVIZ_PLUGINS_PATH environment
+variable.
+
+=head2 Output
+
+Output data in the wanted file format. Available plugins are:
+
+B<svg>
+
+B<plplot>
+
+B<csv>
+
+B<sdl>
+
+B<pngcairo>
+
+B<debug>
+
+=head2 Render
+
+Modify data rendering. Available plugins are:
+
+B<heatline>: possible arguments (B<-A>): virus
+
+B<debug>
+
+
+=head1 KEYWORDS
+
+Keywords are special parameters given to picviz to use a library along with parsing and rendering. This is
+deactivated by default because it makes the program slow, but it may be very usefull in certain cases.
+
+Following keywords are accepted:
+
+B<pcre>: activates pcre pattern matching for filtering (pcv -Tsvg -Wpcre file.pcv 'show value = ".*foo.*" on axis 1')
+
+=head1 FILTER
+
+pcv allows filtering to choose data you want to see displayed. When the pcv language parser is called,
+a Pcv Image Filter (PIF) is applied. It allows to filter either before any data is calculated (B<data filter>),
+once calculated and before adding the line to the image (B<pre line filter>) or, once other lines have been added
+and ask for specific removales (B<post line filter>).
+
+=head2 Relations
+
+Filter relation can be either:
+
+= equal
+
+!= not equal
+
+< less than
+
+> greater than
+
+<= less or equal
+
+>= greater or equal
+
+=head2 Selecting plot value
+
+B<plot>: Will select the value, as plotted by the engine. Accepted values can be the y position on the axis or
+the relative percentage.
+
+'show plot > 100 on axis 3': will display only lines which have their plot on the axis 3 greater than 100
+can be called like this:
+
+Example: pcv -Tsvg file.pcv 'show plot > 100 on axis 3'
+
+By default, the image height is 500 pixels, so this filter is equivalent than > 100:
+
+'show plot > 20% on axis 3'.
+
+It is possible to filter using multi-criterion values:
+
+'show plot > 20% on axis 3 and plot < 42 on axis 5'
+
+=head2 Pattern matching
+
+Values can be selected, either with their original text string, or by using pattern matching. By default,
+pattern matching is B<not> activated.
+
+Pattern matching activated is done with B<-Wpcre> argument. To filter values with B<[0-9][aA].*>, you can type:
+
+pcv -Tsvg file.pcv -Wpcre 'show value = "[0-9][aA].*" on axis 1'.
+
+Note that with string comparisons (with B<value>), only the equal (=) relation is accepted.
+
+=head1 EXAMPLE
+
+B<pcv> -Tsvg file.pcv
+
+B<pcv> -Tpngcairo file.pcv -rrrr -a > file.png
+
+B<pcv> -Tpngcairo -Rheatline -Avirus file.pcv > file.svg
+
+B<pcv> -Tpngcairo -s local.sock -t file.pcv -o file.png ''
+
+=head1 BUGS
+
+If you are sure you are not dealing with a feature, you can report BUGS using the trac ticketing system
+available at B<http://www.wallinfire.net/picviz>.
+
+=head1 AUTHORS
+
+Man page written by Sebastien Tricaud B<toady gscore org>.
+

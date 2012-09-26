@@ -1,0 +1,27 @@
+header {
+	title = "Test ln";
+}
+axes {
+	timeline time;
+	ln foo;
+}
+data {
+	time = "12:00", foo="0";
+	time = "12:00", foo="5";
+	time = "12:00", foo="10";
+	time = "12:00", foo="15";
+	time = "12:00", foo="20";
+	time = "12:00", foo="25";
+	time = "12:00", foo="50";
+	time = "12:00", foo="100";
+	time = "12:00", foo="150";
+	time = "12:00", foo="200";
+	time = "12:00", foo="300";
+	time = "12:00", foo="400";
+	time = "12:00", foo="500";
+	time = "12:00", foo="600";
+	time = "12:00", foo="700";
+	time = "12:00", foo="800";
+	time = "12:00", foo="900";
+	time = "12:00", foo="1000";
+}

@@ -1,0 +1,18 @@
+header {
+    title = "Test 1";
+}
+engine {
+    string_algo = "0";
+    learn = "0";
+}
+axes {
+    timeline t;
+    char     i;
+    string   a;
+}
+data {
+   t="14:42", i="123", s="foobar" [color="#ff0000"];
+   t="14:45", i="234", s="It is practically impossible to teach good programming to students that have had a prior exposure to BASIC: as potential programmers they are mentally mutilated beyond hope of regeneration.";
+   t="18:42", i="123", s="There are many different styles of composition. I characterize them always as Mozart versus Beethoven. When Mozart began to write at that time he had the composition ready in his mind. He wrote the manuscript and it was \'aus einem Guss\' (casted as one). And it was also written very beautiful. Beethoven was an indecisive and a tinkerer and wrote down before he had the composition ready and plastered parts over to change them. There was a certain place where he plastered over nine times and one did remove that carefully to see what happened and it turned out the last version was the same as the first one." [color="#ff0000"];
+}
+

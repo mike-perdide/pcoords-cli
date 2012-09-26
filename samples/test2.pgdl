@@ -1,0 +1,16 @@
+header {
+    title = "Test 2";
+}
+#engine {
+#	axis_default_space="300";
+#}
+axes {
+    timeline t [label="Timeline"];
+    ipv4    i [label="Some IP value"];
+    string   s ;
+}
+data {
+   t="14:42", i="123.2.3.4", s="a" [color="red"];
+   t="15:45", i="200.123.4.6", s="abcdse";
+}
+

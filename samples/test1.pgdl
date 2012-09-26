@@ -1,0 +1,13 @@
+header {
+    title = "Test 1";
+}
+axes {
+    timeline t;
+    char     i;
+    string   a;
+}
+data {
+   t="14:42", i="123", a="foobar" [color="#ff0000"];
+   t="14:45", i="234", a="abcdef";
+}
+

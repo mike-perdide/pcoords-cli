@@ -1,0 +1,13 @@
+header {
+    title = "Test Colors";
+}
+axes {
+    char   axis1;
+    char   axis2;
+}
+data {
+   axis1="0", axis2="10" [color="blue"];
+   axis1="10", axis2="20" [color="green"];
+   axis1="20", axis2="30" [color="red"];
+}
+

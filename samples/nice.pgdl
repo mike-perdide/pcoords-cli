@@ -1,0 +1,37 @@
+header {
+	title = "Something that looks nice!";
+}
+axes {
+	char axis1;
+	char axis2;
+	char axis3;
+	char axis4;
+}
+data {
+	axis1="220",axis2="42",axis3="250",axis4="10" [color="red",penwidth="2"];
+	axis1="215",axis2="42",axis3="245",axis4="20" [color="blue",penwidth="0.5"];
+	axis1="210",axis2="42",axis3="240",axis4="30" [color="blue",penwidth="0.5"];
+	axis1="205",axis2="42",axis3="235",axis4="40" [color="blue",penwidth="0.5"];
+	axis1="200",axis2="42",axis3="230",axis4="50" [color="blue",penwidth="0.5"];
+	axis1="195",axis2="42",axis3="225",axis4="60" [color="blue",penwidth="0.5"];
+	axis1="190",axis2="42",axis3="220",axis4="70" [color="blue",penwidth="0.5"];
+	axis1="185",axis2="42",axis3="215",axis4="80" [color="blue",penwidth="0.5"];
+	axis1="180",axis2="42",axis3="210",axis4="90" [color="blue",penwidth="0.5"];
+	axis1="175",axis2="42",axis3="205",axis4="100" [color="blue",penwidth="0.5"];
+	axis1="170",axis2="42",axis3="200",axis4="110" [color="blue",penwidth="0.5"];
+	axis1="165",axis2="42",axis3="195",axis4="120" [color="blue",penwidth="0.5"];
+	axis1="160",axis2="42",axis3="190",axis4="130" [color="blue",penwidth="0.5"];
+	axis1="155",axis2="42",axis3="185",axis4="140" [color="blue",penwidth="0.5"];
+	axis1="150",axis2="42",axis3="180",axis4="150" [color="blue",penwidth="0.5"];
+	axis1="145",axis2="42",axis3="175",axis4="160" [color="blue",penwidth="0.5"];
+	axis1="140",axis2="42",axis3="170",axis4="170" [color="blue",penwidth="0.5"];
+	axis1="135",axis2="42",axis3="165",axis4="180" [color="blue",penwidth="0.5"];
+	axis1="130",axis2="42",axis3="160",axis4="190" [color="blue",penwidth="0.5"];
+	axis1="125",axis2="42",axis3="155",axis4="200" [color="blue",penwidth="0.5"];
+	axis1="120",axis2="42",axis3="150",axis4="210" [color="blue",penwidth="0.5"];
+	axis1="115",axis2="42",axis3="145",axis4="220" [color="blue",penwidth="0.5"];
+	axis1="110",axis2="42",axis3="140",axis4="230" [color="blue",penwidth="0.5"];
+	axis1="105",axis2="42",axis3="135",axis4="240" [color="blue",penwidth="0.5"];
+	axis1="100",axis2="42",axis3="130",axis4="250" [color="red",penwidth="2"];
+}
+
